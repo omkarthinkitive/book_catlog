@@ -1,0 +1,14 @@
+<!--catalog/templates/create_book.html-->
+
+{% extends 'layout.html' %}
+
+{% block content %}
+    <div class="container">
+        <h4 style="...">Create a new book</h4>
+
+            {{form.hidden_tag()}}
+            {{wtf.quick_form(form)}}
+    </div>
+{% endblock %}
+
+
